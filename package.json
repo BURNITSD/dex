@@ -2,6 +2,7 @@
   "name": "name",
   "private": true,
   "license": "GPL-3.0-or-later",
+  "homepage": "https://burnitsd.github.io/dex/"
   "devDependencies": {
     "@ethersproject/experimental": "5.0.1",
     "@popperjs/core": "2.9.2",
@@ -88,6 +89,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "postinstall": "rm -r ./node_modules/@uniswap/sdk; cp -r ./forks/@uniswap/sdk ./node_modules/@uniswap/sdk",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
